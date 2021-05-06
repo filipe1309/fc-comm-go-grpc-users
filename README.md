@@ -1,4 +1,4 @@
-# <p align="center">Go-gRPC Users</p>
+# <p align="center">Go | gRPC Users</p>
 
 <p align="center">
 <img src="https://img.shields.io/badge/Code-Go-informational?style=flat-square&logo=go&color=00ADD8" alt="Go"/>
