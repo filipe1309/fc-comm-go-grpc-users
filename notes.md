@@ -6,11 +6,13 @@ protoc --version
 
 go get google.golang.org/protobuf/cmd/protoc-gen-go
 go install google.golang.org/protobuf/cmd/protoc-gen-go
+-> asdf reshim
 
 protoc --proto_path=proto proto/*.proto --go_out=pb
 
 go get google.golang.org/grpc/cmd/protoc-gen-go-grpc
 go install google.golang.org/grpc/cmd/protoc-gen-go-grpc
+-> asdf reshim
 
 protoc --proto_path=proto proto/*.proto --go_out=pb --go-grpc_out=pb
 
@@ -32,4 +34,7 @@ $ mv evans /usr/local/bin/evans # This path must be included in $PATH
 evans -r repl --host localhost --port 50051
 pb.UserService@localhost:50051> service UserService
 pb.UserService@localhost:50051> call AddUser
+
+-> go run cmd/server/server.go
+-> go run cmd/client/client.go
 ```
